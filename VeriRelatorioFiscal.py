@@ -44,7 +44,7 @@ def wait_for_download(timeout=60):
 def send_email():
     recipients = ["ti2controllersbr@gmail.com", "carlos.junior@controllersbr.com", "ingrid@controllersbr.com", "joas@controllersbr.com", "juliocesar@controllersbr.com", "lucas@controllersbr.com"] # Ajuste conforme necessário
     sender_email = "redstarenzo@gmail.com" # Ajuste conforme necessário
-    yag = yagmail.SMTP(sender_email, "evms sijx toii aqxx") # Ajuste conforme necessário
+    yag = yagmail.SMTP(sender_email, "xxxx xxxx xxxx") # Ajuste conforme necessário
     
     # Encontrar todos os arquivos PDF
     pdf_files = wait_for_download()
@@ -70,8 +70,8 @@ def run_automation():
     driver.set_window_size(1366, 768)
 
     # Actions in Login
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="kt_sign_in_form"]/div[2]/input'))).send_keys("ti2.controllersbr@gmail.com") # Ajuste conforme necessário
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="kt_sign_in_form"]/div[3]/input'))).send_keys("senha123") # Ajuste conforme necessário
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="kt_sign_in_form"]/div[2]/input'))).send_keys("br@gmail.com") # Ajuste conforme necessário
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="kt_sign_in_form"]/div[3]/input'))).send_keys("senha") # Ajuste conforme necessário
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="kt_sign_in_form"]/div[5]/button'))).click()
 
     # Actions in Dashboard
